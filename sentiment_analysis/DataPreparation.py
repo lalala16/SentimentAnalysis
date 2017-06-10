@@ -135,7 +135,7 @@ class DataPreparation(object):
         for i in range(len(self.data_x)):
             # print i
             # print self.data_x[i]
-            if self.data_x[i][0]==0:
+            if self.data_x[i][0]!=0:
                 after_delete_x.append(self.data_x[i])
                 after_delete_y.append(self.data_y[i])
         self.data_x=after_delete_x
